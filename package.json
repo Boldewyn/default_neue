@@ -1,0 +1,17 @@
+{
+  "name": "default_neue",
+  "version": "0.1.0",
+  "description": "A new default stylesheet",
+  "style": "dist/default_neue.css",
+  "scripts": {
+    "build": "node-sass src/default_neue.scss dist/default_neue.css && postcss --use autoprefixer --use cssnano dist/default_neue.css > dist/default_neue.min.css"
+  },
+  "author": "Manuel Strehl",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "cssnano": "^3.5.2",
+    "node-sass": "^3.7.0",
+    "postcss-cli": "^2.5.2"
+  }
+}

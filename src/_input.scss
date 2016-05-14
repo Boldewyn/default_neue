@@ -1,0 +1,31 @@
+input:not([type]),
+[type="text"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="email"],
+[type="url"],
+[type="datetime"],
+[type="datetime-local"],
+[type="date"],
+[type="month"],
+[type="week"],
+[type="time"],
+[type="number"],
+textarea {
+  background: #f4f2f0;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: .4em;
+  width: 100%;
+  max-width: 360px;
+
+  &:invalid {
+    border-bottom-color: #f67;
+    box-shadow: 0 0 5px rgba(240, 100, 120, .5);
+  }
+
+  &:valid {
+    border-bottom-color: #6f7;
+  }
+}

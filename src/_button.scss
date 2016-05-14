@@ -1,0 +1,19 @@
+[type="button"],
+[type="submit"],
+[type="reset"],
+button {
+  background: linear-gradient(to bottom, #f4f2f0 50%, #ddd 80%);
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  cursor: pointer;
+  min-width: 100px;
+  padding: .4em;
+  text-align: center;
+  transition: all .5s;
+
+  &:focus,
+  &:hover {
+    background: linear-gradient(to bottom, #f9f5f1 50%, #ddd);
+    border-color: 1px solid #ccc;
+  }
+}

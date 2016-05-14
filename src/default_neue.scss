@@ -1,0 +1,12 @@
+body {
+  font: 100%/1.5 Work Sans,Helvetica,Arial,sans-serif;
+  color: #262422;
+  margin: 0;
+}
+
+article {
+  max-width: 1024px;
+  margin: 1.5em auto;
+}
+
+@import "form";
