@@ -27,7 +27,8 @@ textarea {
   border-radius: 2px;
   padding: .4em;
   width: 100%;
-  max-width: 360px; }
+  max-width: 360px;
+  transition: border-color .5s, box-shadow .5s; }
   input:not([type]):invalid,
   [type="text"]:invalid,
   [type="password"]:invalid,
