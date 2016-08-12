@@ -4,7 +4,7 @@
   "description": "A new default stylesheet",
   "style": "dist/default_neue.css",
   "scripts": {
-    "build": "node-sass --output-style expanded src/default_neue.scss | postcss --use autoprefixer > dist/default_neue.css && postcss --use cssnano dist/default_neue.css > dist/default_neue.min.css"
+    "build": "node-sass --output-style expanded src/default_neue.scss | postcss --use autoprefixer --use postcss-import > dist/default_neue.css && postcss --use cssnano dist/default_neue.css > dist/default_neue.min.css"
   },
   "author": "Manuel Strehl",
   "license": "MIT",
@@ -12,6 +12,10 @@
     "autoprefixer": "^6.3.6",
     "cssnano": "^3.5.2",
     "node-sass": "^3.7.0",
-    "postcss-cli": "^2.5.2"
+    "postcss-cli": "^2.5.2",
+    "postcss-import": "^8.1.2"
+  },
+  "dependencies": {
+    "normalize.css": "^4.2.0"
   }
 }
